@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../index.html">
+            <img id="logo" src="../images/48_logo.jpg">   
+        </a>
+        <div class="navbar_toggle" id="mobile_menu" onclick="toggleDropdown()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="navbar_menu">
+            <li class="navbar_item"><a href="../index.html" class="navbar_links">首頁</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links">簡介</a>
+            <ul>
+                    <li class="drop_item"><a href="gsltalk.html">旅長的話</a></li>
+                    <li class="drop_item"><a href="development.html">旅部發展</a></li>
+                    <li class="drop_item"><a href="structure.html">架構圖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">童軍活動</a>
+                <ul>
+                    <li class="drop_item"><a href="calendar.html">行事曆</a></li>
+                    <li class="drop_item"><a href="notice.html">通告</a></li>
+                    <li class="drop_item"><a href="download.html">表格下載</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">獎項</a>
+                <ul>
+                    <li class="drop_item"><a href="leaderAward.html">領袖獎項</a></li>
+                    <li class="drop_item"><a href="scoutAward.html">青少年獎項</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links" href="https://www.instagram.com/48scout/">照片廊</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links" >領袖簡介</a>
+                <ul>
+                    <li class="drop_item"><a href="leader.html">領袖簡介</a></li>
+                    <li class="drop_item"><a href="internalleader.html">內務領袖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">支部</a>
+                <ul>
+                    <li class="drop_item"><a href="venturescoutunit.html">深資童軍團</a></li>
+                    <li class="drop_item"><a href="scouttroop.html">童軍團</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a href="contact.html" class="navbar_links">聯絡我們</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="text_container">
+            <div id="contacts">
+                <h1>聯繫我們</h1>
+                <p>Group 旅號	：	48th Hong Kong Group 港島第四十八旅 <br>
+                    District 區會	：	Hong Kong Northern District 港島北區<br>
+                    Region 地域	：	Hong Kong Island Region 港島地域<br>
+                    Address 地址	：	St. Joan of Arc Secondary School (55 Braemar Hill Road, North Point, HK)<br>
+                    香港北角寶馬山道五十五號 聖貞德中學 <button onclick="openMap('55 Braemar Hill Road, North Point, HK')">View on Map</button><br>
+                    Telephone 電話	：	(852) 2578 5984<br>
+                    Email 電郵	：	48hkg@hkirscout.org.hk<br>
+                    Website 網址	：	http://www.48hkg.com</p>
+            </div>
+            <h1>位置圖</h1>
+            <div id="location">
+                <img src="../images/map_48hkg_3.jpg" alt="">
+            </div>
+            <div id="copyrights">
+                <h1>版主資料</h1>
+                <p>Created & Designed by 網站設計	：	Mr. Patrick Chan 陳嘉華先生 (AVSL 深資童軍副團長)<br>
+                    Email 電郵	：	patrickchan.48hkg@gmail.com<br>
+                    Webmaster 網站管理	：	Mr. Brian Lau 劉國俊先生 (SL 童軍團長)<br>
+                    Email 電郵	：	laukc.brian@gmail.com</p>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="top"><img src="../images/arrow-up.png" id="arrow_up"></button>
+    </div>
+    <footer>
+      <h4>Copyright © 2006 - 2022‧48th Hong Kong Group‧All Rights Reserved‧
+          <a target="_blank" href="copyright.htm">免責及版權聲明</a>
+      </h4>
+    <footer>
+</body>
+<link rel="stylesheet" href="CSS/style.css">
+<script src="./JS/app.js"></script>
+<style>
+    img{
+        max-width: 300px;
+    }
+    #contacts p , #location img , #copyrights p{
+        padding-top: 1rem;
+    }
+    /*Tablet display*/
+    @media only screen and (min-width: 768px){
+        #text_container{
+            padding: 1.2rem;
+            width: 80%;
+        }
+        img{
+            max-width: 600px;
+        }
+
+    }
+    /*PC display*/
+    @media only screen and (min-width: 1023px){
+        #text_container{
+            width: 60%;
+            max-width: 900px;
+        }
+    }
+</style>
+</html>

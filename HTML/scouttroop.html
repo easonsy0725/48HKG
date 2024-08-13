@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../index.html">
+            <img id="logo" src="../images/48_logo.jpg">   
+        </a>
+        <div class="navbar_toggle" id="mobile_menu" onclick="toggleDropdown()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="navbar_menu">
+            <li class="navbar_item"><a href="../index.html" class="navbar_links">首頁</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links">簡介</a>
+            <ul>
+                    <li class="drop_item"><a href="gsltalk.html">旅長的話</a></li>
+                    <li class="drop_item"><a href="development.html">旅部發展</a></li>
+                    <li class="drop_item"><a href="structure.html">架構圖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">童軍活動</a>
+                <ul>
+                    <li class="drop_item"><a href="calendar.html">行事曆</a></li>
+                    <li class="drop_item"><a href="notice.html">通告</a></li>
+                    <li class="drop_item"><a href="download.html">表格下載</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">獎項</a>
+                <ul>
+                    <li class="drop_item"><a href="leaderAward.html">領袖獎項</a></li>
+                    <li class="drop_item"><a href="scoutAward.html">青少年獎項</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links" href="https://www.instagram.com/48scout/">照片廊</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links" >領袖簡介</a>
+                <ul>
+                    <li class="drop_item"><a href="leader.html">領袖簡介</a></li>
+                    <li class="drop_item"><a href="internalleader.html">內務領袖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">支部</a>
+                <ul>
+                    <li class="drop_item"><a href="venturescoutunit.html">深資童軍團</a></li>
+                    <li class="drop_item"><a href="scouttroop.html">童軍團</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a href="contact.html" class="navbar_links">聯絡我們</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="text_container">
+            <div id="News">
+                <h3>News<br>最新消息</h3>
+                <p>2022/12/30：本旅童軍團獲香港童軍總會港島地域頒發「區總監嘉許銅獎」，以表揚童軍團協助1名童軍
+                    成功考獲總領袖獎章。<br>
+                    2022/10/01：本旅童軍團成員 莊正維 考獲童軍支部最高之獎章 -「總領袖獎章」。<br>
+                    2022/09/01：本旅童軍團獲香港童軍總會港島地域評選為「2022年優異旅團」。
+                </p>
+            </div>
+            <br>
+            <div id="Intro">
+                <h3>Introduction of Scout Section<br>童軍支部簡介</h3>
+                <p> 童軍訓練採取小隊制度形式，配合歡愉富吸引力而有價值之有進度性的訓練，引導十一至十六歲之成員按部就班地從戶外群體活動與訓練中一同策劃、學習和經歷，鍛鍊領導才能，並確認及表揚一起實踐的成果，
+                    以促進這個階段之少年人身心精神之陶冶與啟發，以貫徹整個童軍運動連續性訓練，達成童軍支部訓練之目的。
+                    童軍成員除可因應個人技能及興趣考取各專科徽章（專章）外，亦可同時考取四個進度性獎章（進度章），包括「童軍探索獎章」、「童軍標準獎章」、「童軍高級獎章」及「總領袖獎章」。<br>
+                
+                    童軍活動的基本技能，如露營、烹飪、探險等及其他興趣，已編訂於「童軍探索獎章」及「童軍標準獎章」之內。「童軍高級獎章」則對技能知識要求更高，並加入自立及服務他人等項目。
+                    「總領袖獎章」是童軍支部最高之獎章，加入了教授隊員技能及策劃活動元素，目的是考驗及增強責任心及領導才。<br>
+                
+                    童軍進度性的訓練綱要在於鼓勵新加入的童軍同時亦能滿足資歷較深的童軍之需求，環繞小隊制度為中心。此訓練階段之特點在於使一名童軍由初加入起就能完全投入童軍活動。它提供戶外活動資料，
+                    包括給予年長之童軍探險活動，給予服務的機會及領導才的訓練，同時此訓練階段也要使童軍能保持其興趣，以完成其在童軍團中近五年的童軍生活。
+                </p>
+            </div>
+            <br>
+            <div id="Roles">
+                <h3>Scout Patrol Leader, Patrol Leader & Assistant Patrol Leader<br>團隊長、小隊長及副小隊長</h3>
+                <p>
+                    小隊制度是童軍支部一種特色，這個制度給予青少年機會去嘗試已選擇及實踐喜愛的活動。童軍們由六至十人編組為一小隊並由一小隊長領導。小隊長會議是由小隊長及團隊長組成，主要功能是建議、策劃及協助團推行活動和訓練，並對各小隊之活動作出支援及協調。  
+                </p>
+                <br>
+                <!--Members Roles-->
+                <table>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/plb3_spl1.jpg" alt="">
+                            <p>Scout Patrol Leader <br> 團隊長</p>
+                        </th>
+                        <th colspan="3">
+                            <div class="Names">Hayden Ong<br>王浩銓</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th><img src="../images/scoutTroop/pc_buffalo.gif" alt=""></th>
+                        <th><img src="../images/scoutTroop/pc_falcon.gif" alt=""></th>
+                        <th><img src="../images/scoutTroop/pc_otter.gif" alt=""></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/plb2_pl.jpg" alt="">
+                            <p>Patrol Leader <br> 小隊長</p>
+                        </th>
+                        <th>
+                            <div class="Names">Hayley Wong<br>黃晞怡</div>
+                        </th>
+                        <th>
+                            <div class="Names">Eason Sy<br>施家豪</div>
+                        </th>
+                        <th>
+                            <div class="Names">Allison Luk<br>陸卓彤</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/plb1_apl.jpg" alt="">
+                            <p>Assistant Patrol Leader<br>副小隊長</p>
+                        </th>
+                        <th>
+                            <div class="Names">Luna Law /<br>
+                                Alice Cheung<br>
+                                羅泳澄 / 張豐酌</div>
+                        </th>
+                        <th>
+                            <div class="Names">Hayden Cheung /<br>Chloe Chan<br>張浩俊 / 陳栩彤</div>
+                        </th>
+                        <th>
+                            <div class="Names">Sean Yip<br>葉爽</div>
+                        </th>
+                    </tr>
+                </table>
+                <br>
+                <!--Progressive Award-->
+                <h3>Progressive Award<br>進度性獎章</h3>
+                <table>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/st4_pathfinder.jpg" alt="">    
+                            <p>Scout Pathfinder Award<br>童軍探索獎章</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「童軍探索獎章」名單如下：<br>
+                                2021年：陸卓彤、吳漾晞、黃芊芸、施家豪、張浩俊、王浩銓<br>
+                                2022年：黃鎧霖、葉爽、陳栩彤、張豐酌、彭子鋒、羅泳澄、汪昊樺、白克立<br>
+                                2023年：古蕊嘉、殷浩正、吳灝晞
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/st2_challenger.jpg" alt="">    
+                            <p>Scout Standard Award<br>童軍標準獎章</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「童軍標準獎章」名單如下：<br>
+                                2019年：楊凱瑩、劉好、郭嘉豪<br>
+                                2021年：莊正維、盧卓謙、林祖亨<br>
+                                2022年：王浩銓、黃晞怡、陸卓彤、施家豪
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/st3_voyager.jpg" alt="">    
+                            <p>Scout Advanced Award<br>童軍高級獎章</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「童軍探索獎章」名單如下：<br>
+                                2021年：陸卓彤、吳漾晞、黃芊芸、施家豪、張浩俊、王浩銓<br>
+                                2022年：黃鎧霖、葉爽、陳栩彤、張豐酌、彭子鋒、羅泳澄、汪昊樺、白克立<br>
+                                2023年：古蕊嘉、殷浩正、吳灝晞
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/st1_chiefscouts.jpg" alt="">    
+                            <p>Chief Scout's Award<br>總領袖獎章</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「總領袖獎章」名單如下：<br>
+                                2004年：崔文豪 <br>
+                                2008年：李佳傑 <br>               
+                                2010年：馮冠熹、黎汶洛<br>
+                                2014年：唐文軒 <br>       
+                                2021年：楊凱瑩、劉好 <br>        
+                                2022年：莊正維 <br>
+                            </p>
+                        </th>
+                    </tr>
+                </table>
+                <br>
+                <!--Sea Badges-->
+                <h3>Sea Activity Badges<br>海上活動徽章</h3>
+                <table>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/sea1.jpg" alt="">    
+                            <p>Oarsman<br>艇工</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「艇工」名單如下：<br>
+                                2018年：郭璟諾、江偉民、陳柏行、胡峻達、劉好、林祖亨、岑家謙、楊凱瑩、
+                                               Mishral Johann Sanchez <br> 
+                                2019年：王浩銓、吳漾晞、阮崇敏 <br>
+                                2020年：陸卓彤、黃芊芸、葉爽<br>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/sea2.jpg" alt="">    
+                            <p>Boatman<br>水手</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「水手」名單如下：<br>
+                                2019年：胡峻達、劉好、Mishral Johann Sanchez、楊凱瑩、林祖亨 <br>
+                                2021年：陸卓彤、黃芊芸<br>
+                            </p>
+                        </th>
+                    </tr>
+                </table>
+                <br>
+                <!--Air Badges-->
+                <h3>Air Activity Badges<br>航空活動徽章</h3>
+                <table>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/air1_airactivity.jpg" alt="">    
+                            <p>Basic Air Activity<br>初級航空活動</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「初級航空活動」名單如下：<br>
+                                2018年：陳柏行、楊凱瑩、劉好、莊正維、林祖亨、郭嘉豪 <br>
+                                2021年：王浩銓、黃晞怡、陳樂琳、施家豪 <br>
+                                2022年：張浩俊、陳栩彤、彭子鋒、汪昊樺、陸卓彤 <br>
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/air2_intermediateairactivity.jpg" alt="">    
+                            <p>Intermediate Air Activity<br>中級航空活動</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「中級航空活動」名單如下：<br>
+                                2019年：楊凱瑩、劉好、林祖亨、郭嘉豪<br>
+                                2021年：莊正維、黃晞怡<br>
+                                2022年：王浩銓
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/air3_advancedairactivity.jpg" alt="">    
+                            <p>Advanced Air Activity<br>高級航空活動</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「高級航空活動」名單如下：<br>
+                                2019年：楊凱瑩<br>
+                                2022年：王浩銓
+                            </p>
+                        </th>
+                    </tr>
+                </table>
+                <br>
+                <!--Other Badges-->
+                <h3>	Other Awards And Badges<br>其他奬章及徽章</h3>
+                <table>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/oa_leadershipaward.jpg" alt="">    
+                            <p>Leadership Award<br>領導才獎章</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「領導才獎章」名單如下：<br>
+                                2021年：黃晞怡、王浩銓、陸卓彤<br>
+                                2022年：施家豪<br>
+                                2023年：陳栩彤、汪昊樺
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/oa_serviceflash.jpg" alt="">    
+                            <p>Service Flash<br>服務獎章</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「服務獎章」名單如下：<br>
+                                2020年：楊凱瑩、劉好 <br>
+                                2022年：莊正維、黃晞怡<br>
+                                2023年：王浩銓
+                            </p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <img src="../images/scoutTroop/oa_venturescoutlinkbadge.jpg" alt="">    
+                            <p>Venture Scout Link Badge<br>深資童軍先修章</p>
+                        </th>
+                        <th>
+                            <p>
+                                考獲「深資童軍先修章」名單如下：<br>
+                                2021年：楊凱瑩、盧卓謙、劉好、莊正維、林祖亨、岑家謙、王浩銓、黃晞怡 <br>
+                                2022年：陸卓彤、施家豪、羅泳澄、陳樂琳
+                            </p>
+                        </th>
+                    </tr>
+                </table>
+                <h3>Additional Information<br>其它資訊</h3>
+                <p>如想了解更多童軍支部資訊，請登入 <a href="https://prog.scouting.org.hk/scouts/">童軍資訊站</a> 瀏覽。</p>
+            </div>
+        </div>
+        
+        <button onclick="topFunction()" id="top"><img src="../images/arrow-up.png" id="arrow_up"></button>
+    </div>
+    <footer>
+      <h4>Copyright © 2006 - 2022‧48th Hong Kong Group‧All Rights Reserved‧
+          <a target="_blank" href="copyright.htm">免責及版權聲明</a>
+      </h4>
+    <footer>
+</body>
+<link rel="stylesheet" href="CSS/style.css">
+<script src="./JS/app.js"></script>
+<style>
+    table{
+        width:100%;
+        
+    }
+    table img{
+        width: 50%;
+        max-width: 300px;
+    }
+    th{
+        border: solid 1px black;
+    }
+    /*Tablet display*/
+    @media only screen and (min-width: 768px){
+        #text_container{
+            padding: 1rem;
+            width: 70%;
+        }
+    }
+    /*PC display*/
+    @media only screen and (min-width: 1023px){
+        #text_container{
+            margin: 2rem;
+            width: 65%;
+        }
+        #text_container img{
+            border-radius: 5%;
+            min-width: 100px;
+            max-width: 100px;
+        }
+    }
+
+
+</style>
+</html>

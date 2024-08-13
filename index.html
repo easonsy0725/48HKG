@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">
+            <img id="logo" src="images/48_logo.jpg">   
+        </a>
+        <div class="navbar_toggle" id="mobile_menu" onclick="toggleDropdown()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="navbar_menu">
+            <li class="navbar_item"><a href="index.html" class="navbar_links">首頁</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links">簡介</a>
+            <ul>
+                    <li class="drop_item"><a href="HTML/gsltalk.html">旅長的話</a></li>
+                    <li class="drop_item"><a href="HTML/development.html">旅部發展</a></li>
+                    <li class="drop_item"><a href="HTML/structure.html">架構圖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">童軍活動</a>
+                <ul>
+                    <li class="drop_item"><a href="HTML/calendar.html">行事曆</a></li>
+                    <li class="drop_item"><a href="HTML/notice.html">通告</a></li>
+                    <li class="drop_item"><a href="HTML/download.html">表格下載</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">獎項</a>
+                <ul>
+                    <li class="drop_item"><a href="HTML/leaderAward.html">領袖獎項</a></li>
+                    <li class="drop_item"><a href="HTML/scoutAward.html">青少年獎項</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links" href="https://www.instagram.com/48scout/">照片廊</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links" >領袖簡介</a>
+                <ul>
+                    <li class="drop_item"><a href="HTML/leader.html">領袖簡介</a></li>
+                    <li class="drop_item"><a href="HTML/internalleader.html">內務領袖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">支部</a>
+                <ul>
+                    <li class="drop_item"><a href="HTML/venturescoutunit.html">深資童軍團</a></li>
+                    <li class="drop_item"><a href="HTML/scouttroop.html">童軍團</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a href="HTML/contact.html" class="navbar_links">聯絡我們</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/index/img1(1000).jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/index/img2(1000).jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/index/img3(1000).jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div id="socials">
+            <a href="https://www.instagram.com/48scout/" class='socials_links'><img src="images/index/instagram_logo.png" class="socials_logo"><h3>instagram</h3></a>
+            <a href="https://www.facebook.com/48hkg" class='socials_links'><img src="images/index/Facebook_Logo.png" class="socials_logo"><h3>facebook</h3></a>
+            <a href="https://www.facebook.com/48hkg" class='socials_links'><img src="images/index/googleForms_logo.png" class="socials_logo"><h3>Online Recruitment Form<br>網上入團申請表</h3></a>
+        </div>
+        <div id="update_container">
+            <div>
+                <div class="updates" id="news">
+                    <h3>最新消息</h3>
+                    <hr>
+                    <h6>2022/03/04：因應疫情最新發展及為保障童軍成員的健康安全，所有實體童軍活動（包括：集會、活動及訓練）
+                                繼續暫停至2022年4月20日。<br>
+    
+                                在恢復實體集會及活動前，本團將在逢星期六下午舉辦網上實時集會，以視訊會議平台(Google Meet)
+                                取代學校集會來教授各項知識。每次網上實時集會的Google Meet ID，將在星期四前由隊長提供給成員。<br></h6>
+                </div>
+                <div class="updates">
+                    <h3>更新資訊</h3>
+                    <hr>
+                    <h6>2022/03/19 更新：行事曆、通告、童軍團。<br>
+                    2022/03/12 更新：童軍團。<br>
+                    2022/03/04 更新：行事曆、通告。<br>
+                    2022/02/22 更新：嘉許獎勵。<br>
+                    2022/02/15 更新：行事曆、通告。<br>
+                    2022/02/04 更新：通告。<br>
+                    2022/01/29 更新：行事曆、通告、童軍團。<br>
+                    2022/01/17 更新：行事曆、通告。<br>
+                    2022/01/06 更新：照片廊。<br>
+                    2022/01/01 更新：行事曆、領袖簡介、深資童軍團。</h6>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="top"><img src="images/arrow-up.png" id="arrow_up"></button>
+    </div>
+    <footer>
+      <h4>Copyright © 2006 - 2022‧48th Hong Kong Group‧All Rights Reserved‧
+          <a target="_blank" href="HTML/copyright.htm">免責及版權聲明</a>
+      </h4>
+    <footer>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+<style>
+
+    * {
+        box-sizing: border-box
+    }
+    body {
+        font-family: Verdana, sans-serif; margin:0
+    }
+    .mySlides {
+        display: none
+    }
+    img {
+        vertical-align: middle;
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 80%;
+        position: relative;
+        margin-top: 10px;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        .dot{
+        height: 10px;
+        width: 10px;
+        }
+        @media only screen and (max-width: 500px) {
+            .prev, .next,.text {font-size: 14px}
+        }
+    }
+    #socials{
+        text-align: center;
+        background-color: white;
+        color: black;
+        padding: 0.5rem;
+        align-items: center;
+        border-radius: 30px;
+        margin-top: 5px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .socials_links{
+        text-align: center;
+        width:auto;
+        height:5%;
+    }
+    .socials_logo{
+        width: 10%;
+        padding-top:0.5rem;
+        max-width: 200px;
+    }
+    #update_container{
+        text-align: center;
+    }
+    hr{
+        height: 0.2rem;
+        width:100%;
+        background-color:black;
+    }
+    .updates{
+        vertical-align: top;
+        width: 40%;
+        margin: 1rem;
+        background-color: white;
+        min-width:260px;
+        display: inline-block;
+        padding: 2em;
+        line-height: 2em;
+        border-radius: 3rem;
+        text-align: center;
+    }
+
+    @media (min-width:1000px){
+        .arrow:hover{
+            opacity: .5;
+            width: 35px;
+            height: 35;
+        }
+        #socials{
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            background-color: white;
+            color: black;
+        }
+        .socials_links{
+            text-align: center;
+            width:auto
+        }
+        #socials a{
+        text-decoration: none;
+        color: black;
+        }
+        .socials_logo{
+            width: 20%;
+        }
+        .updates{
+            font-size: 1.5rem;
+        }
+    }
+    @media (min-width:1480px){
+        #image_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #image_wrapper{
+            display: inline-flex;
+            padding: 10px;
+            margin: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .arrow:hover{
+            opacity: .5;
+            width: 35px;
+            height: 35px;
+        }
+        #socials{
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            background-color: white;
+            color: black;
+            width: 100%;
+        }
+        #socials a{
+            text-decoration: none;
+            color: black;
+        }
+        .socials_links{
+            text-align: center;
+            width:auto
+        }
+        #socials h1{
+            display:none;
+        }
+        .socials_logo{
+            width: 20%;
+        }
+        .updates{
+            font-size: 1.5rem;
+        }
+    }
+</style>
+<link rel="stylesheet" href="HTML/CSS/style.css">
+<script src="HTML/JS/app.js"></script>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../index.html">
+            <img id="logo" src="../images/48_logo.jpg">   
+        </a>
+        <div class="navbar_toggle" id="mobile_menu" onclick="toggleDropdown()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="navbar_menu">
+            <li class="navbar_item"><a href="../index.html" class="navbar_links">首頁</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links">簡介</a>
+            <ul>
+                    <li class="drop_item"><a href="gsltalk.html">旅長的話</a></li>
+                    <li class="drop_item"><a href="development.html">旅部發展</a></li>
+                    <li class="drop_item"><a href="structure.html">架構圖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">童軍活動</a>
+                <ul>
+                    <li class="drop_item"><a href="calendar.html">行事曆</a></li>
+                    <li class="drop_item"><a href="notice.html">通告</a></li>
+                    <li class="drop_item"><a href="download.html">表格下載</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">獎項</a>
+                <ul>
+                    <li class="drop_item"><a href="leaderAward.html">領袖獎項</a></li>
+                    <li class="drop_item"><a href="scoutAward.html">青少年獎項</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links" href="https://www.instagram.com/48scout/">照片廊</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links" >領袖簡介</a>
+                <ul>
+                    <li class="drop_item"><a href="leader.html">領袖簡介</a></li>
+                    <li class="drop_item"><a href="internalleader.html">內務領袖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">支部</a>
+                <ul>
+                    <li class="drop_item"><a href="venturescoutunit.html">深資童軍團</a></li>
+                    <li class="drop_item"><a href="scouttroop.html">童軍團</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a href="contact.html" class="navbar_links">聯絡我們</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="text_container">
+            <h3>通告</h3>
+            <table id="scoutLinks">
+                <tr class="subtitles">
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_48_02 (1).jpg" alt="">
+                        <a href="#groupNotice"><p>Group 旅部</p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_hkScout.png" alt="">
+                        <a href="#groupNotice"><p>AHQ 總會</p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_HKIR (1).jpeg" alt="">
+                        <a href="#groupNotice"><p>HKIR 港島地域</p></a>
+                    </td>
+                </tr>
+                <tr class="subtitles">
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_HKIR (1).jpeg" alt="">
+                        <a href="#groupNotice"><p>HKIR District 港島地域轄下區會</p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_KR.jpeg" alt="">
+                        <a href="#groupNotice"><p>KR 九龍地域</p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_EKR.gif" alt="">
+                        <a href="#groupNotice"><p>EKR 東九龍地域</p></a>
+                    </td>
+                </tr>
+                <tr class="subtitles">
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_hkScout.png" alt="">
+                        <a href="#groupNotice"><p>Training & Activity 訓練及活動</p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_NTR.gif" alt="">
+                        <a href="#groupNotice"><p>NTR 新界地域</p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_NTER.jpeg" alt="">
+                        <a href="#groupNotice"><p>NTER 新界東地域 </p></a>
+                    </td>
+                </tr>
+                <tr class="subtitles">
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_hkScout.png" alt="">
+                        <a href="#groupNotice"><p>Activity Guideline <br>活動指引</p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_hkScout.png" alt="">
+                        <a href="#groupNotice"><p>Admin Circular <br>行政通告 </p></a>
+                    </td>
+                    <td class="subtitles">
+                        <img class="district_logo" src="../images/Notice/logo_hkScout.png" alt="">
+                        <a href="#groupNotice"><p>Other Circular <br>其他通告 </p></a>
+                    </td>
+                </tr>
+            </table>
+            <div class="subtitles">
+                <img class="district_logo" src="../images/Notice/logo_48_02 (1).jpg" alt="">
+                <h3>Group Circular 旅部通告</h3>
+            </div>
+            <table>
+                <tr>
+                    <th>Date<br>日期</th>
+                    <th colspan="5">Subject<br>通告名稱</th>
+                    <th>Download<br>下載</th>
+                </tr>
+                <tr>
+                    <td><p>2023/06/28</p></td>
+                    <td colspan="5"><p>	Sea Activity - Sailing Trip (Circular No. 2023/07)<br>海上活動：帆船旅程 (通告第 2023/07 號)</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/06/01</p></td>
+                    <td colspan="5"><p>Outdoor Activity: Summer Splash 2023 (Activity Circular No. V2023/01)<br>戶外活動： 夏水禮 2023 (活動通告第 V2023/01號)</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/03/29</p></td>
+                    <td colspan="5"><p>Tai Tam Day Camp & Evening Camp (Circular No. 2023/06)<br>戶外活動：大潭日營及黃昏營 (通告第 2023/06 號)</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/03/02</p></td>
+                    <td colspan="5"><p>	Hong Kong Island Region Scout Family Fun Day (Service) (Circular No. 2023/04)<br>「童心•童Fun基層兒童服務計劃」繽Fun遊戲日(服務) (通告第 2023/04 號)</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+            </table>
+            <br>
+            <div class="subtitles">
+                <img class="district_logo" src="../images/Notice/logo_HKIR_ND (1).gif" alt="">
+                <img class="district_logo" src="../images/Notice/logo_HKIR_VCD.jpg" alt="">
+                <img class="district_logo" src="../images/Notice/logo_HKIR_CWD.gif" alt="">
+                <h3> HKIR District Circular<br>港島地域轄下區會通告</h3>
+                <img class="district_logo" src="../images/Notice/logo_HKIR_SD.gif" alt="">
+                <img class="district_logo" src="../images/Notice/logo_HKIR_SKWD.gif" alt="">
+                <img class="district_logo" src="../images/Notice/logo_HKIR_WCD.gif" alt="">
+                <img class="district_logo" src="../images/Notice/logo_HKIR_WD.gif" alt="">
+            </div>
+            <table>
+                <tr>
+                    <th>Date<br>日期</th>
+                    <th>Districts<br>區會</th>
+                    <th colspan="5">Subject<br>通告名稱</th>
+                    <th>Download<br>下載</th>
+                </tr>
+                <tr>
+                    <td><p>2023/06/20</p></td>
+                    <td><p>港島北區</p></td>
+                    <td colspan="5"><p>童軍專章考驗日 — 語言章及指引章</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/06/01</p></td>
+                    <td><p>柴灣區</p></td>
+                    <td colspan="5"><p>	童軍原野烹飪（技能組）專章訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/06/01</p></td>
+                    <td><p>	港島北區</p></td>
+                    <td colspan="5"><p>童軍地圖繪製章訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>港島西區</p></td>
+                    <td colspan="5"><p>	第 526 屆童軍領導才訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	柴灣區</p></td>
+                    <td colspan="5"><p>	童軍共融（服務組）專章訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+            </table>
+            <br>
+            <div class="subtitles">
+                <img class="district_logo" src="../images/Notice/logo_HKIR (1).jpeg" alt="">
+                <h3>Circular of Training & Activity <br>訓練及活動通告</h3>
+            </div>
+            <br>
+            <h3>Training Course 訓練班</h3>
+            <br>
+            <table>
+                <tr>
+                    <th>Date<br>日期</th>
+                    <th>Unit / Region<br>單位 / 地域</th>
+                    <th colspan="5">Subject<br>通告名稱</th>
+                    <th>Download<br>下載</th>
+                </tr>
+                <tr>
+                    <td><p>2023/07/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>港島童軍射藝會－反曲弓初級射箭訓練班（2）－（童軍及深資童軍支部）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/07/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	獨木舟水球一段章及二段章訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/07/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	二級童軍標準艇訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/06/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>港島童軍氣槍射擊會－童軍射擊（技能組）專章訓練班（2）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	港島童軍氣槍射擊會－童軍射擊（技能組）專章訓練班（1）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>港島童軍天文組－童軍天象（技能組）專章訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	獨木舟一星、二星及三星訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	風帆入門訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	室內龍舟訓練證書課程（A）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	童軍氣象章訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+            </table>
+            <br>
+            <h3>Service & Activity 服務與活動</h3>
+            <br>
+            <table>
+                <tr>
+                    <th>Date<br>日期</th>
+                    <th>Unit / Region<br>單位 / 地域</th>
+                    <th colspan="5">Subject<br>通告名稱</th>
+                    <th>Download<br>下載</th>
+                </tr>
+                <tr>
+                    <td><p>2023/07/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	港島童軍繽紛日2023</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>	Project 18－模擬飛行房間開放計劃（青年空間1808室）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	港島地域</p></td>
+                    <td colspan="5"><p>山嶺童行 x 山徑清源 2023-2024</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/03/01</p></td>
+                    <td><p>青少年活動署</p></td>
+                    <td colspan="5"><p>	二級童軍標準艇訓練班</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>青少年活動署</p></td>
+                    <td colspan="5"><p>	童軍支部疫情支援特別計劃－「堅系童軍計劃」</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2023/05/01</p></td>
+                    <td><p>	領袖訓練學院</p></td>
+                    <td colspan="5"><p>王兆生領袖訓練中心 - 免費開放試驗計劃</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+            </table>
+            <br>
+            <h3>Activity Guideline 活動指引</h3>
+            <br>
+            <table>
+                <tr>
+                    <th colspan="4" rowspan="2"><p>Date<br>日期</p></th>
+                    <th colspan="2" rowspan="2"><p>Subject<br>通告名稱</p></th>
+                    <th colspan="2"><p>Download<br>下載表格</p></th>
+                </tr>
+                <tr>
+                    <td><p>中文</p></td>
+                    <td><p>Eng</p></td>
+                </tr>
+                <tr>
+                    <td><p>2022/09/01</p></td>
+                    <td colspan="5"><p>	Precautions for Expedition Activities under the Epidemic<br>遠足活動防疫指引</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><p>2021/10/15</p></td>
+                    <td colspan="5"><p>	Guidelines for Reporting Accident Occurred During Scout Activities<br>童軍活動的意外通報指引</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2019/08/23</p></td>
+                    <td colspan="5"><p>	Safety guideline on Scout activities: How to handle in case of community emergency situation<br>童軍活動安全指引：應付社區緊急情況之安排</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2018/08/15</p></td>
+                    <td colspan="5"><p>Anti-Mosquitoes Measures<br>預防蚊患措施</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2018/01/01</p></td>
+                    <td colspan="5"><p>	Contingency Measures in Cases of Inclement Weather and Air Pollution<br>惡劣天氣及空氣污染應變措施</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2018/01/01</p></td>
+                    <td colspan="5"><p>	Principles and Guidelines on Outdoor Activities<br>戶外活動安全要則及須知</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2018/01/01</p></td>
+                    <td colspan="5"><p>Safety Guideline of Sea Activities<br>童軍海上活動安全指引</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+            </table>
+            <br>
+            <h3>	Admin Circular 行政通告</h3>
+            <br>
+            <table>
+                <tr>
+                    <th colspan="4" rowspan="2"><p>Date<br>日期</p></th>
+                    <th colspan="2" rowspan="2"><p>Subject<br>通告名稱</p></th>
+                    <th colspan="2"><p>Download<br>下載表格</p></th>
+                </tr>
+                <tr>
+                    <td><p>中文</p></td>
+                    <td><p>Eng</p></td>
+                </tr>
+                <tr>
+                    <td><p>2023/04/01</p></td>
+                    <td colspan="5"><p>General Liability Insurance & Group Personal Accident Insurance<br>「公眾責任保險」及「團體人身意外保險」</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2022/12/01</p></td>
+                    <td colspan="5"><p>	Assistance Scheme for Needy Student Members’ Uniform (subsidized by Home and Youth Affairs Bureau)<br>學生隊員制服資助計劃（由民政及青年事務局資助）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2022/12/01</p></td>
+                    <td colspan="5"><p>	Assistance Scheme for Needy Student Members’ Training (subsidized by Home and Youth Affairs Bureau)<br>學生隊員訓練資助計劃（由民政及青年事務局資助）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2022/04/01</p></td>
+                    <td colspan="5"><p>Young Leaders Development Scheme (Overseas Activities Subsidy)（2022 - 2023）<br>青年領袖發展計劃（海外活動津貼）（2022 - 2023）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2018/01/01</p></td>
+                    <td colspan="5"><p>Overseas and Mainland Activities Subsidy Scheme<br>海外及內地活動津貼計劃</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+            </table>
+            <br>
+            <h3>	Other Circular 其他通告</h3>
+            <br>
+            <table>
+                <tr>
+                    <th rowspan="2"><p>Date<br>日期</p></th>
+                    <th colspan="2" rowspan="2"><p>Unit / Region<br>單位 / 地域</p></th>
+                    <th colspan="3" rowspan="2"><p>Subject<br>通告名稱</p></th>
+                    <th colspan="2"><p>Download<br>下載表格</p></th>
+                </tr>
+                <tr>
+                    <td><p>中文</p></td>
+                    <td><p>Eng</p></td>
+                </tr>
+                <tr>
+                    <td><p>2023/01/01</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Guidelines of Wearing Scout Badges on Uniform (Youth Members)<br>支部成員徽章佩戴指引（P13/2023）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2023/01/01</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Procedures and Guidelines on Issue and Collection / Purchase of Badges in Scout Section<br>童軍支部各級徽章簽發及領取／購買方法（P7/2023）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2022/07/01</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Swimming Test Guidelines<br>「游泳測試」考核指引（P76/2022）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2022/05/01</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Sectional Progressive Awards Arrangements under the Epidemic<br>疫情下考取各支部進度性獎章之安排（P59/2022）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2022/05/01</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Certificate of Swimming Test and Scout Standard Boat Logbook<br>「游泳測試證明書」及「童軍標準艇紀錄冊」（P61/2022）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2020/11/01</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Online Learning and Progressive Award Online Assessment Scheme under the Epidemic<br>疫情下網上學習及進度性獎章網上考驗計劃（P74/2020）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2020/07/15</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Application for Group Visit of Hong Kong Aviation Club<br>「香港飛行總會」團體參觀申請（P52/2020）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2020/07/15</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Air Activity Badges Assessment Record Book<br>航空活動徽章考驗紀錄簿（P54/2020）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2020/05/15</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Extension of the Assessment Periods of Awards (2)<br>延長考取獎章期限（二）（P43/2020）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2022/04/15</p></td>
+                    <td><p>HKIR<br>港島地域</p></td>
+                    <td colspan="4"><p>	童軍專科徽章／獎章考驗網上申請表格</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2022/03/15</p></td>
+                    <td><p>HKIR<br>港島地域</p></td>
+                    <td colspan="4"><p>Procedures and Guidelines on Issue and Collection / Purchase of Badges in Venture Scout Section<br>深資童軍支部各級徽章簽發及領取／購買方法（P31/2020）</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2017/10/15</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Joint University Programmes Admissions System (JUPAS) Other Experiences and Achievements in Competitions / Activities (OEA)<br>「大學聯合招生辦法」比賽／活動的經驗及成就</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td><p>2013/12/15</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>	Service Star<br>服務年星</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+                <tr>
+                    <td><p>2011/09/15</p></td>
+                    <td><p>	Programme Branch<br>青少年活動署</p></td>
+                    <td colspan="4"><p>Update in Administration Procedure for HKAYP in SAHK<br>香港青年獎勵計劃程序修訂及安排</p></td>
+                    <td><a href=""><img class="logo" src="../images/Notice/i_pdf (2).gif" alt=""></a></td>
+                    <td><a href=""></td>
+                </tr>
+            </table>
+        </div>
+        <button onclick="topFunction()" id="top"><img src="../images/arrow-up.png" id="arrow_up"></button>
+    </div>
+    <footer>
+      <h4>Copyright © 2006 - 2022‧48th Hong Kong Group‧All Rights Reserved‧
+          <a target="_blank" href="copyright.htm">免責及版權聲明</a>
+      </h4>
+    </footer>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="./JS/app.js"></script>
+    <style>
+        #text_container{
+            width: auto;
+        }
+        #scoutLinks tr td{
+            width: 100%;
+        }
+        table tr td , table tr textPath{
+            border: 1px solid black;
+        }
+        .subtitles{
+            display: flex;
+            align-items: center;
+        }
+        .district_logo{
+            max-width: 40px;
+        }
+        .logo{
+            max-width: 25px;
+        }
+        /*Tablet display*/
+        @media only screen and (min-width: 768px){
+            #text_container{
+                width: 90%;
+            }
+        }
+        /*PC display*/
+        @media only screen and (min-width: 1023px){
+            #text_container{
+                width: 70%;
+                max-width: 800px;
+            }
+        }
+    </style>
+</body>
+</html>

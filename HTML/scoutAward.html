@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../index.html">
+            <img id="logo" src="../images/48_logo.jpg">   
+        </a>
+        <div class="navbar_toggle" id="mobile_menu" onclick="toggleDropdown()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="navbar_menu">
+            <li class="navbar_item"><a href="../index.html" class="navbar_links">首頁</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links">簡介</a>
+            <ul>
+                    <li class="drop_item"><a href="gsltalk.html">旅長的話</a></li>
+                    <li class="drop_item"><a href="development.html">旅部發展</a></li>
+                    <li class="drop_item"><a href="structure.html">架構圖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">童軍活動</a>
+                <ul>
+                    <li class="drop_item"><a href="calendar.html">行事曆</a></li>
+                    <li class="drop_item"><a href="notice.html">通告</a></li>
+                    <li class="drop_item"><a href="download.html">表格下載</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">獎項</a>
+                <ul>
+                    <li class="drop_item"><a href="leaderAward.html">領袖獎項</a></li>
+                    <li class="drop_item"><a href="scoutAward.html">青少年獎項</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links" href="https://www.instagram.com/48scout/">照片廊</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links" >領袖簡介</a>
+                <ul>
+                    <li class="drop_item"><a href="leader.html">領袖簡介</a></li>
+                    <li class="drop_item"><a href="internalleader.html">內務領袖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">支部</a>
+                <ul>
+                    <li class="drop_item"><a href="venturescoutunit.html">深資童軍團</a></li>
+                    <li class="drop_item"><a href="scouttroop.html">童軍團</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a href="contact.html" class="navbar_links">聯絡我們</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="text_container">
+            <h3>優異旅團獎勵計劃</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="../images/Scout_Award/perfectgroup.gif" alt="">    
+                        <p>優異旅團章</p>
+                    </td>
+                    <td rowspan="4">
+                        <p>獲香港童軍總會港島地域評為「優異旅團」名單如下：</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        童軍團 (2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017,
+                                        2018, 2019, 2020, 2021, 2022)
+                                        <br>
+                                        深資童軍團 (2010, 2011, 2012, 2013, 2018, 2019, 2020, 2021, 2022)
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>「童建蜂巢眾志成 - 感謝狀」</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="../images/Scout_Award/2019 HKIR Certificate of Appreciation.jpg" alt="">    
+                        <p>Certificate of Appreciation<br>感謝狀</p>
+                    </td>
+                    <td rowspan="4">
+                        <p>獲香港童軍總會港島地域頒授「感謝狀」，以感謝慷慨捐助「童建蜂巢眾志成」，名單如下：</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        港島第四十八旅(2019)      羅永杰先生(2019)      羅永林先生(2019)
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>港島地域旅團服務獎</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="../images/Scout_Award/HKIR Service Award 2010.jpg" alt="">    
+                        <p>嘉許獎</p>
+                    </td>
+                    <td rowspan="4">
+                        <p>本旅獲香港童軍總會港島地域頒授「旅團服務獎」名單如下：</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        嘉許獎(2010) 港島地域旅團服務獎2010 <a href="http://www.48hkg.com/Notice/HKIR%20Service%20Award%202010.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a><br>
+                                        嘉許獎(2011) 港島地域旅團服務獎2011 <a href="http://www.48hkg.com/Notice/HKIR%20Service%20Award%202011.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a><br>
+                                        季軍(2012) 港島地域旅團服務獎2012   <a href="http://www.48hkg.com/Notice/HKIR%20Service%20Award%202011.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a><br>
+                                        嘉許獎(2013) 港島地域旅團服務獎2013 <a href="http://www.48hkg.com/Notice/HKIR%20Service%20Award%202011.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a><br>
+                                        嘉許獎(2014) 港島地域旅團服務獎2014 <a href="http://www.48hkg.com/Notice/HKIR%20Service%20Award%202011.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a><br>
+                                        感謝狀(2016) 港島地域旅團服務獎2016 <a href="http://www.48hkg.com/Notice/HKIR%20Service%20Award%202011.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>區總監嘉許計劃</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="../images/Scout_Award/HKIRNDDCA2.jpg" alt="">    
+                        <p>區總監嘉許計劃</p>
+                    </td>
+                    <td>
+                        <p>獲香港童軍總會港島地域港島北區頒授「區總監嘉許計劃」名單如下：</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        童軍團：銅獎(2014)     銀獎(2021)     銅獎(2022)
+                                        <br>
+                                        深資童軍團：金獎(2014)
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../images/Scout_Award/HKIRNDDCA.jpg" alt="">    
+                        <p>區總監嘉許狀</p>
+                    </td>
+                    <td>
+                        <p>獲香港童軍總會港島地域港島北區頒授「區總監嘉許狀」名單如下：</p>
+                        <br>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        梁志輝先生(2008)     陳嘉華先生(2008)     王嘉豪先生(2021)     劉國俊先生(2021)<br>
+                                        譚嘉洋先生(2021)     崔文豪先生(2021)     黃曉峰先生(2021)     李佳傑先生(2021)
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>港島北區比賽</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKIR_ND.gif" alt="">    
+                            <p>港島北區城市追蹤2019</p>
+                            <a href="http://www.48hkg.com/Notice/HKN%20City%20Orienteering%202019_Result.pdf"><img  class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        童軍組：季軍
+                                        <br>
+                                        楊凱瑩 郭嘉豪
+                                        張家敏 吳汝東
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKIR_ND.gif" alt="">    
+                            <p>2019嘉爾頓錦標 港島北區選拔賽</p>
+                            <a href="http://www.48hkg.com/Notice/HKN%20Carlton%20Trophy%202019_Result.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        先鋒工程：最佳小隊表現獎
+                                        <br>
+                                        杜之淳 胡峻達 林祖亨
+                                        陳柏行 楊凱瑩 劉  好
+                                        郭嘉豪 岑家謙 莫孝揚
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>童游20游泳大賽</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p>「青少年活動署二十周年金盃賽—地域邀請賽」</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/2017_Scout Swimming Competition.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        20x50米接力賽：亞軍
+                                        <br>
+                                        杜之淳
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>港島童軍大露營2013</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_Island Scout Jamboree 2013.gif" alt="">    
+                            <p>「港島童軍大露營2013」</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        「童隊大挑戰」 冠軍
+                                        <br>
+                                        唐文軒、覃志諾
+                                        <br>
+                                        區梓聰、勞念庭
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        「神探學院」 季軍
+                                        <br>
+                                        唐文軒、覃志諾
+                                        <br>
+                                        區梓聰、勞念庭
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>飛行探索者錦標賽</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_AAHKIR.jpg" alt="">    
+                            <p>「第七屆飛行探索者錦標賽」</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/2018 Air Day Champion.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        童軍支部 冠軍
+                                        <br>
+                                        楊凱瑩（隊長）
+                                        <br>
+                                        陳柏行 莫孝楊 莊正維
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <div class="subtitles">
+                                <img class="icons" src="../images/Scout_Award/logo_AAHKIR.jpg" alt="">    
+                                <p>「第七屆飛行探索者錦標賽」</p>
+                                <a href="http://www.48hkg.com/Notice/Airman%20Day%20Result%202014.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                            </div>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        深資童軍及樂行童軍組<br>
+                                        飛行比賽 亞軍<br>
+                                        李佳傑 梁和興
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_AAHKIR.jpg" alt="">    
+                            <p>「第四屆飛行探索者錦標賽」</p>
+                            <a href="http://www.48hkg.com/Notice/Airman%20Day%20Result%202014.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/2011_Air Competition01.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        深資童軍支部 亞軍<br>
+                                        姚嘉駿 劉祉夆<br>
+                                        馮冠熹 黎汶洛
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="../images/Scout_Award/2011_Air Competition02.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p>
+                                        童軍支部 季軍<br>
+                                        陳頌楊 梁和興<br>
+                                        廖子康 林澤鴻
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>童軍賽船大會</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p>「2012年度童軍賽船大會」</p>
+                            <a href="http://www.48hkg.com/Notice/Sea%20Scout%20Regatta%202012_Result.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2012_HQ_fancy01.jpg" alt="">
+                                        <img src="../images/Scout_Award/2012_HQ_fancy02.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇錦標」<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2012_HQ_fancy02.jpg" alt="">
+                                        <img src="../images/Scout_Award/2012_HQ_fancy01.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇技巧錦標（國慶盃）」<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p>「2010年度童軍賽船大會」</p>
+                            <a href="http://www.48hkg.com/Notice/Sea%20Scout%20Regatta%202010_Result.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20101117_2.jpg" alt="">
+                                        <img src="../images/Scout_Award/20101117_1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「海童軍錦標賽」<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <div class="subtitles">
+                                <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                                <p>「2009年度童軍賽船大會」</p>
+                                <a href="http://www.48hkg.com/Notice/Sea%20Scout%20Regatta%202009_Result.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                            </div>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20091028_1.jpg" alt="">
+                                        <img src="../images/Scout_Award/20091028_2.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「小艇搖櫓錦標賽 (童軍組)」<br>
+                                        亞軍：梁志忠<br>
+                                        季軍：陳涵祥
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>港島童軍賽船大會</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p>「港島童軍賽船大會2011」</p>
+                            <a href="http://www.48hkg.com/Notice/Island%20Sea%20Scout%20Regatta%202011_Result.pdf"><img class="pdfIcons" src="../images/Scout_Award/i_pdf.gif" alt=""></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2011_speed01.jpg" alt="">
+                                        <img src="../images/Scout_Award/2011_speed02.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇速度錦標賽」<br>
+                                        (賽程800米)br
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2010_speed04.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇速度錦標賽」<br>
+                                        (賽程1000米)<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2010_fancy01.jpg" alt="">
+                                        <img src="../images/Scout_Award/2010_fancy02.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇花式錦標賽」<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2010_fancy04.jpg" alt="">
+                                        <img src="../images/Scout_Award/2010_fancy05.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇花式錦標賽」<br>
+                                        季軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇錦標」<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2012_HQ_fancy02.jpg" alt="">
+                                        <img src="../images/Scout_Award/2012_HQ_fancy01.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「標準艇搖櫓錦標賽」<br>
+                                        (公開組)<br>
+                                        冠軍：姚嘉駿<br>
+                                        亞軍：施俊驊<br>
+                                        季軍：楊俊朗
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/2010_speed01.jpg" alt="">
+                                        <img src="../images/Scout_Award/20101117_1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「小艇搖櫓錦標賽」<br>
+                                        (童軍組) <br>
+                                        亞軍：馮冠熹<br>
+                                        季軍：梁志忠
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p>「港島童軍賽船大會2009」</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20091025_9.jpg" alt="">
+                                        <img src="../images/Scout_Award/20091025_1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇速度錦標賽」<br>
+                                        (賽程1000米) <br>
+                                        <br>
+                                        冠軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20091025_10.jpg" alt="">
+                                        <img src="../images/Scout_Award/20091025_3.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇速度錦標賽」<br>
+                                        (賽程1000米)<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20091025_11.jpg" alt="">
+                                        <img src="../images/Scout_Award/20091025_5.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇花式錦標賽」<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20091025_11.jpg" alt="">
+                                        <img src="../images/Scout_Award/20091025_5.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇花式錦標賽」 <br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20091025_12.jpg" alt="">
+                                        <img src="../images/Scout_Award/20091025_7.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇花式錦標賽」<br>
+                                        季軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「小艇搖櫓錦標賽 (公開組)」<br>
+                                        亞軍：姚嘉駿<br>
+                                        季軍：施俊驊
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「小艇搖櫓錦標賽 (童軍組)」<br>
+                                        冠軍：馮冠熹<br>
+                                        季軍：黎汶洛
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/temp_award.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「大潭灣獨木舟公開賽2009 <br>
+                                        (男子少年組)」<br>
+                                        季軍：蔡健洋
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p>「港島童軍賽船大會2008」</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20081012_5.jpg" alt="">
+                                        <img src="../images/Scout_Award/20081012_1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇速度錦標賽」<br>
+                                        (賽程1000米)<br>
+                                        冠軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/20081012_3.jpg" alt="">
+                                        <img src="../images/Scout_Award/20081012_4.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        「童軍標準艇花式錦標賽」<br>
+                                        亞軍
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>2019年白沙灣獨木舟排名聯賽 (東九龍地域)</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p> 男子青年領袖組</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/201901.jpg" alt="">
+                                        <img src="../images/Scout_Award/201902.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        獨木舟75米：亞軍 <br>
+                                        獨木舟100米：冠軍 <br>
+                                        楊俊朗
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/201903.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        立划艇600米：季軍<br>
+                                        楊俊朗
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <h3>2018年白沙灣獨木舟新秀賽 (東九龍地域)</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div class="subtitles">
+                            <img class="icons" src="../images/Scout_Award/logo_HKSS.gif" alt="">    
+                            <p>領袖先進組</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/201801.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        男子75米：亞軍<br>
+                                        陳嘉華
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="imgContainer">
+                                        <img src="../images/Scout_Award/201802.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        男子100米：亞軍<br>
+                                        陳嘉華
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button onclick="topFunction()" id="top"><img src="../images/arrow-up.png" id="arrow_up"></button>
+    </div>
+    <footer>
+      <h4>Copyright © 2006 - 2022‧48th Hong Kong Group‧All Rights Reserved‧
+          <a target="_blank" href="copyright.htm">免責及版權聲明</a>
+      </h4>
+    </footer>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="./JS/app.js"></script>
+    <style>
+        img{
+            max-width: 80px;
+        }
+        .icons{
+            max-width: 30px;
+        }
+        .pdfIcons{
+            max-width: 20px;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        .subtitles{
+            display: flex;
+        }
+        #text_container{
+            margin: 1rem;
+        }
+        /*Tablet display*/
+        @media only screen and (min-width: 768px){
+            img{
+                max-width: 100px;
+            }
+            .icons{
+                max-width: 40px;
+            }
+            .pdfIcons{
+                max-width: 30px;
+            }
+            p{
+                font-size: 1rem;
+            }
+
+        }
+        /*PC display*/
+        @media only screen and (min-width: 1023px){
+            #text_container{
+                width: 50%;
+            }
+            p{
+                font-size: 1rem;
+            }
+
+        }
+    </style>
+</body>
+</html>

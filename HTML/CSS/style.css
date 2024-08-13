@@ -1,0 +1,211 @@
+  /*Mobile display*/
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  #main{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right ,  green,purple);
+    flex-direction: column;
+    align-items: center;
+  }
+  #logo{
+      width: 30%;
+      max-width: 60px;
+      margin: 10px;
+      margin-left: 15px;
+  }
+  #mobile_menu{
+      position: absolute;
+      top:35%;
+      right:5%;
+      display: block;
+  }
+  #navbar{
+      list-style: none;
+      font-size: 1.2rem;
+      position: sticky;
+      background-color: white;
+      border: 2px solid black;
+      z-index: 2;
+  }
+  #navbar_menu{
+      display: none;
+      grid-template-columns: auto;
+      margin: 0;
+      padding:0;
+      width: 100%;
+      position: absolute;
+      
+  }
+  #navbar_menu.active{
+      font-size: 1.6rem;
+      background-color:  rgb(67, 102, 66);
+      border: 5px solid black;;
+      display: grid;
+      justify-content: center;
+      list-style: none;
+      text-decoration: none;
+  }
+  #navbar .bar{
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background-color: black;
+  }
+  .navbar_item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.7rem 0  0.7rem 0;
+  }
+  .navbar_item a{
+    text-decoration: none;
+    color: white;
+  }
+  .navbar_links{
+      align-self: center;
+  }
+  .dropDown ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+  }
+  .button{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width:80%;
+      margin: 0;
+  }
+  .navbar_toggle .bar{
+      display: block;
+      cursor: pointer;
+  }
+  .drop_item{
+      display: none;
+  }
+  
+  .drop_item a{ 
+    padding: 0.5rem; 
+    color: lightgray; 
+    background-color: #654266; 
+    margin-bottom: 1px; 
+    border-radius: 10px; 
+  }
+  #text_container{
+    margin: 5px;
+    padding: 0.5rem; 
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    border: 0.2rem black solid;
+  }
+  #top{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  #arrow_up{
+    width:10%;
+    background-color: transparent;
+    margin: 0 1rem 1rem 1rem;
+    max-width: 60px;
+  }
+  footer {
+    background: white;
+    grid-area: footer;
+    flex-grow: 1;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  footer a{
+    color:blue;
+    text-decoration-line: underline;
+  }
+  /*Tablet display*/
+  @media only screen and (min-width: 768px){
+      body{
+          background-color: black;
+      }
+      #mobile_menu{
+          position: absolute;
+          top:35%;
+          right:10%;
+          display: block;
+      }
+  }
+  /*PC display*/
+  @media only screen and (min-width: 1023px){
+      body{
+          background-color: blue;
+      }
+      #logo{
+        width: 30%;
+        max-width: 100px;
+        margin: 10px;
+        margin-left: 15px;
+      }
+      #mobile_menu{
+          display: none;
+      }
+      #navbar_menu{
+          top: 0;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+
+          list-style: none;
+
+      }
+      .navbar_item a{
+          color:black;
+      }
+      #navbar {
+          position: relative;
+      }
+      .dropDown {
+        position: relative;
+      }
+      .dropDown ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+          background-color: purple;
+      }
+      .dropDown:hover ul {
+          display: block;
+      }
+      .drop_item{
+        padding: 0.1rem;
+      }
+      .drop_item a{
+        padding: 0.5rem;
+        color: white;
+        background-color: purple;
+        white-space: nowrap;
+      }
+      .navbar_links{
+        color:black;
+        font-size: 1.6rem;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding: 15px;
+        transition: all ease 0.3s;
+      }
+      .navbar_links:hover{
+        transition: translateX(0%);
+        background-color: rgb(67, 102, 66);
+        color: white;
+      }
+  }

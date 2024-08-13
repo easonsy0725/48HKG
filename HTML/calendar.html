@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="../index.html">
+            <img id="logo" src="../images/48_logo.jpg">   
+        </a>
+        <div class="navbar_toggle" id="mobile_menu" onclick="toggleDropdown()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="navbar_menu">
+            <li class="navbar_item"><a href="../index.html" class="navbar_links">首頁</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links">簡介</a>
+            <ul>
+                    <li class="drop_item"><a href="gsltalk.html">旅長的話</a></li>
+                    <li class="drop_item"><a href="development.html">旅部發展</a></li>
+                    <li class="drop_item"><a href="structure.html">架構圖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">童軍活動</a>
+                <ul>
+                    <li class="drop_item"><a href="calendar.html">行事曆</a></li>
+                    <li class="drop_item"><a href="notice.html">通告</a></li>
+                    <li class="drop_item"><a href="download.html">表格下載</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">獎項</a>
+                <ul>
+                    <li class="drop_item"><a href="leaderAward.html">領袖獎項</a></li>
+                    <li class="drop_item"><a href="scoutAward.html">青少年獎項</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links" href="https://www.instagram.com/48scout/">照片廊</a></li>
+            <li class="navbar_item dropDown"><a class="navbar_links" >領袖簡介</a>
+                <ul>
+                    <li class="drop_item"><a href="leader.html">領袖簡介</a></li>
+                    <li class="drop_item"><a href="internalleader.html">內務領袖</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a class="navbar_links">支部</a>
+                <ul>
+                    <li class="drop_item"><a href="venturescoutunit.html">深資童軍團</a></li>
+                    <li class="drop_item"><a href="scouttroop.html">童軍團</a></li>
+                </ul>
+            </li>
+            <li class="navbar_item dropDown"><a href="contact.html" class="navbar_links">聯絡我們</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div class="calendar">
+            <div class="header">
+                <button id="prevMonth">&lt;</button>
+                <h2 id="monthYear"></h2>
+                <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="days"></div>
+        </div>
+        <table id="activities">
+            <tbody>
+                <tr>
+                    <th>Month<br>月份</th>
+                    <th>Date<br>日期</th>
+                    <th>Time<br>時間</th>
+                    <th>Location<br>地點</th>
+                    <th>Event<br>活動</th>
+                </tr>
+                <!-- Jan (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="5">JAN<br>1月</td>
+                    <td>6</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (First Aid)<br>旅部集會 (急救)</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Code & Trace Symbol)<br>旅部集會 (密碼及追蹤符號)</td>
+                </tr>
+                <tr>
+                    <td>13-14<br>(六至日)</td>
+                    <td>11:00 - 15:00</td>
+                    <td>Sai Kung East Country Park<br>西貢東郊野公園</td>
+                    <td>Patrol Leader Training Camp (Hiking Camp) ((Applicable to PL & APL)
+                        <br>隊長訓練營（兩日一夜遠足訓練） (隊長及副隊長適用)</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>13:30 - 17:30</td>
+                    <td>The Peak > Pok Fu Lam<br>山頂 > 薄扶林</td>
+                    <td>Social Service: Cleaning Trails (The Peak Tower)<br>社區服務：清潔山徑(山頂凌霄賞維港)</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Badge Assessment)<br>旅部集會 (專章考驗)</td>
+                </tr>
+                <!-- Feb (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="4">FEB<br>2月</td>
+                    <td>3</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Backwoods Cooking)<br>旅部集會 (原野烹飪)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td rowspan="3">N/A</td>
+                    <td rowspan="3">N/A</td>
+                    <td>Adjournment (Lunar New Year Holidays)<br>休會 (農曆新年假期)</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td rowspan="2">Adjournment (21/02-01/03/2024 ~ Second Exam)<br>休會 (21/02-01/03/2024 ~ 第二次考試)</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                </tr>
+                <!-- Mar (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="7">MAR<br>3月</td>
+                    <td>2</td>
+                    <td>10:00 - 17:00</td>
+                    <td>Lamma Island<br>南丫島</td>
+                    <td>Outdoor Activity: Lamma Island (Round-trip ferry fare is fully subsidized)<br>戶外活動：南丫島遊蹤 (來回船費已獲全費資助)<br>[Activity is cancelled 活動取消]</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Knots Patrice)<br>旅部集會 (繩結練習)</td>
+                </tr>
+                <tr>
+                    <td>10 (日)</td>
+                    <td>09:00 - 17:00</td>
+                    <td>Island Trail Section No. 4, 3, 2, 1<br>港島徑第四、三、二、一段</td>
+                    <td>Outdoor Activity: Island Scout Trail Walk's Practice (Registered Scout)<br>戶外活動：港島童軍毅行練習日 (已報名童軍)</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>09:00 - 18:00</td>
+                    <td>HKN District & Outdoor<br>港島北區區會 及 戶外</td>
+                    <td>Training Course (HKN Fireman Badge Training Course) (Registered Scout)<br>訓練班 (港島北區童軍消防訓練班) (已報名童軍)</td>
+                </tr>
+                <tr>
+                    <td>17 (日)</td>
+                    <td>09:00 - 17:00</td>
+                    <td>Island Trail Section No. 4, 3, 2, 1<br>港島徑第四、三、二、一段</td>
+                    <td>Outdoor Activity: Island Scout Trail Walk (Registered Scout)<br>戶外活動：港島童軍毅行 (已報名童軍)</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>09:00 - 18:00</td>
+                    <td>HKN District & Outdoor<br>港島北區區會 及 戶外</td>
+                    <td>Training Course (HKN Fireman Badge Training Course) (Registered Scout)<br>訓練班 (港島北區童軍消防訓練班) (已報名童軍)</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>Adjournment (Easter Holiday)<br>休會 (復活節假期)</td>
+                </tr>
+                <!-- Apr (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="4">APR<br>4月</td>
+                    <td>6</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Morrison Hill Swimming Pool<br>摩理臣山游泳池</td>
+                    <td>Swimming Practice & Test<br>游泳練習及測試</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td rowspan="3">14:00-17:00</td>
+                    <td rowspan="3">Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Knots Patrice & Understand Weather and Climate)<br>旅部集會 (繩結練習及認識天氣與氣候)</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Weekly Meeting (Preparation of Cook (Chinese Dishes) Badge Assessment)<br>旅部集會 (準備烹飪(中式)章考驗)</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Weekly Meeting (Small Unmanned Aircraft)<br>旅部集會 (小型無人機)</td>
+                </tr>
+                <!-- May (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="6">MAY<br>5月</td>
+                    <td>4</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Preparation of Cook (Chinese Dishes) Badge Assessment)<br>旅部集會 (準備烹飪(中式)章考驗)<br>[Cancelled due to rainy weather 因天雨關係取消]</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>14:00-17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Cook (Chinese Dishes) Badge Assessment)<br>旅部集會 (烹飪(中式)章考驗)</td>
+                </tr>
+                <tr>
+                    <td>15 (三)</td>
+                    <td>12:00 - 18:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Training: Level 1 Mountain Craft Training Course (Theory Class)<br>訓練活動：一級山藝訓練證書課程 (理論課)</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>12:00 - 18:00</td>
+                    <td>Sai Kung West Country Park<br>西貢西郊野公園</td>
+                    <td>Training: Level 1 Mountain Craft Training Course (Practical Class)<br>訓練活動：一級山藝訓練證書課程 (實習課)</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">25</td>
+                    <td>12:00 - 18:00</td>
+                    <td>Braemar Hill, North Point<br>北角寶馬山</td>
+                    <td>Training: Level 1 Mountain Craft Training Course (Practical Class)<br>訓練活動：一級山藝訓練證書課程 (實習課)</td>
+                </tr>
+                <tr>
+                    <td>18:00 - 21:30</td>
+                    <td>St. Joan of Arc Secondary School<br>聖貞德中學</td>
+                    <td>The 68th Anniversary Barbecue Gathering<br>創旅六十八週年燒烤聯誼活動</td>
+                </tr>
+                <!-- Jun (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="5">JUN<br>6月</td>
+                    <td>1</td>
+                    <td>13:00 - 17:00</td>
+                    <td>St. Joan of Arc Secondary School<br>聖貞德中學</td>
+                    <td>School Duty: SJA Speech Day 2023-2024 (Applicable to part of members)<br>當值工作：聖貞德中學 2023-2024 年度畢業典禮 (部分成員適用)</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td rowspan="3">N/A</td>
+                    <td rowspan="3">N/A</td>
+                    <td rowspan="3">Adjournment (11-20/06 ~ Third Exam)<br>休會 (11-20/06 ~ 第三次考試)</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>30/6-1/7<br>(日至一)</td>
+                    <td>07:30 - 16:30</td>
+                    <td>Boluo, Huizhou<br>惠州博羅</td>
+                    <td>Huizhou Boluo Environmental Protection Exchange Tour<br>惠州博羅環保交流之旅</td>
+                </tr>
+                <!-- Jul (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="4">JUL<br>7月</td>
+                    <td>6</td>
+                    <td rowspan="3">14:00 - 17:00</td>
+                    <td rowspan="3">Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting (Map Reading)<br>旅部集會 (地圖閱讀)</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Weekly Meeting (Handling during an Accident)<br>旅部集會 (意外事件處理)</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Weekly Meeting (Preparation for Service)<br>旅部集會 (準備服務)</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>12:00-18:00</td>
+                    <td>Hang Seng University of Hong Kong<br>香港恒生大學</td>
+                    <td>Service: Olympic Dreams @ Hang Seng University<br>服務：《 奧 夢【童】【恒】 》<a href="http://www.48hkg.com/Notice/2024_10_Service%20(Olympic%20Dreams%20@%20Hang%20Seng%20University).pdf"><img class="pdfIcon" src="../images/Download/i_pdf (1).gif" alt=""></a></td>
+                </tr>
+                <!-- Aug (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="5">AUG<br>8月</td>
+                    <td>3</td>
+                    <td>14:00 - 17:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Weekly Meeting<br>旅部集會</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>09:30 - 17:00</td>
+                    <td>Hong Kong Waters<br>香港水域</td>
+                    <td>Sea Activity - Sailing Trip<br>海上活動：帆船旅程 <a href="http://www.48hkg.com/Notice/2024_09_Sea%20Activity%20(Sailing%20Trip).pdf"><img class="pdfIcon" src="../images/Download/i_pdf (1).gif" alt=""></a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td rowspan="2">09:30 - 17:00</td>
+                    <td rowspan="2">Hong Kong Waters<br>香港水域</td>
+                    <td rowspan="2">Meeting<br>旅部集會</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>9:00-13:00</td>
+                    <td>Group Headquarter<br>旅部</td>
+                    <td>Recruitment Day<br>招募新成員</td>
+                </tr>
+                <!-- Sep (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="4">SEP<br>9月</td>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Oct (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="4">OCT<br>10月</td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>            <tr>
+                    <td>19</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>            <tr>
+                    <td>26</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Nov (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="5">NOV<br>11月</td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>            
+                <tr>
+                    <td>16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>           
+                <tr>
+                    <td>23</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Dec (rowspawn = number of events in this month)-->
+                <tr>
+                    <td rowspan="4">DEC<br>12月</td>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+      <button onclick="topFunction()" id="top">Return to top</button>
+      <h4>Copyright © 2006 - 2022‧48th Hong Kong Group‧All Rights Reserved‧
+          <a target="_blank" href="copyright.htm">免責及版權聲明</a>
+      </h4>
+    <footer>
+</body>
+<style>
+    .calendar {
+        font-family: Arial, sans-serif;
+        border: 1px solid #ccc;
+        background-color: white;
+        margin: 1rem;
+        width: 300px;
+        padding: 10px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .day {
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+
+    .today {
+        background-color: lightblue;
+    }
+    #activities{
+        margin: auto;
+        padding: 0.5rem; 
+        width: 90%;
+        display: grid;
+        justify-items: center;
+        background-color: white;
+        border: 0.2rem black solid;
+    }
+    #activities tbody tr td{
+        border: 0.1rem black solid;
+    }
+    .pdfIcon{
+        max-width: 20px;
+    }
+    .publicHoliday {
+        background-color: red;
+        color: white; 
+    }
+    /*Tablet display*/
+    @media only screen and (min-width: 768px){
+        #activities{
+            width: 50%;
+        }
+    }
+    /*PC display*/
+    @media only screen and (min-width: 1023px){
+
+    }
+</style>
+<script>
+    const header = document.getElementById('monthYear');
+    const daysContainer = document.querySelector('.days');
+    const prevMonthBtn = document.getElementById('prevMonth');
+    const nextMonthBtn = document.getElementById('nextMonth');
+    const activitiesContainer = document.getElementById('activities');
+    
+    
+    
+    
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+    
+    // Sample activities data (date format: 'YYYY-MM-DD')
+    const publicHolidaysHK = {
+        '2024-01-01': 'New Year\'s Day',
+        '2024-02-12': 'Chinese New Year',
+        '2024-02-13': 'Second Day of Chinese New Year',
+        '2024-04-05': 'Ching Ming Festival',
+        '2024-04-19': 'Good Friday',
+        '2024-04-22': 'Easter Monday',
+        '2024-05-01': 'Labour Day',
+        '2024-06-07': 'Tuen Ng Festival',
+        '2024-07-01': 'Hong Kong Special Administrative Region Establishment Day',
+        '2024-09-14': 'Mid-Autumn Festival',
+        '2024-10-01': 'National Day',
+        '2024-10-07': 'Chung Yeung Festival',
+        '2024-12-25': 'Christmas Day',
+        '2024-12-26': 'Boxing Day'
+    };
+
+    function renderCalendar() {
+        header.textContent = new Date(currentYear, currentMonth).toLocaleString('default', { month: 'long' }) + ' ' + currentYear;
+        daysContainer.innerHTML = '';
+
+        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+        for (let i = 1; i <= daysInMonth; i++) {
+            const day = document.createElement('div');
+            day.textContent = i;
+            day.classList.add('day');
+
+            const dateKey = `${currentYear}-${(currentMonth + 1).toString().padStart(2, '0')}-${i.toString().padStart(2, '0')}`;
+            
+            if (activities[dateKey]) {
+                const activity = document.createElement('div');
+                activity.textContent = activities[dateKey];
+                activitiesContainer.appendChild(activity);
+            }
+
+            if (currentDate.getDate() === i && currentDate.getMonth() === currentMonth && currentDate.getFullYear() === currentYear) {
+                day.classList.add('today');
+            }
+
+            if (isPublicHoliday(dateKey)) {
+                day.classList.add('publicHoliday');
+            }
+
+            day.addEventListener('click', () => {
+                showActivitiesForDate(dateKey);
+            });
+
+            daysContainer.appendChild(day);
+        }
+    }
+
+    function isPublicHoliday(date) {
+        return publicHolidaysHK[date] !== undefined;
+    }
+
+    function showActivitiesForDate(date) {
+        const selectedDateActivities = activities[date];
+        if (selectedDateActivities) {
+            alert(`Activities for ${date}: ${selectedDateActivities}`);
+        } else {
+            alert(`No activities scheduled for ${date}`);
+        }
+    }
+
+    renderCalendar();
+
+    prevMonthBtn.addEventListener('click', () => {
+        if (currentMonth === 0) {
+            currentMonth = 11;
+            currentYear--;
+        } else {
+            currentMonth--;
+        }
+        renderCalendar();
+    });
+
+    nextMonthBtn.addEventListener('click', () => {
+        if (currentMonth === 11) {
+            currentMonth = 0;
+            currentYear++;
+        } else {
+            currentMonth++;
+        }
+        renderCalendar();
+    });
+    
+</script>
+<link rel="stylesheet" href="CSS/style.css">
+<script src="./JS/app.js"></script>
+</html>
