@@ -61,17 +61,47 @@
     <div id="main">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/index/img1(1000).jpg" style="width:100%">
+                <div class="numbertext">1 / 2</div>
+                <div class="updates">
+                    <h3>最新消息</h3>
+                    <hr>
+                    <h6>2022/03/04：因應疫情最新發展及為保障童軍成員的健康安全，
+                        <br>
+                        所有實體童軍活動（包括：集會、活動及訓練）繼續暫停至2022年4月20日。
+                        <br>
+                        在恢復實體集會及活動前，本團將在逢星期六下午舉辦網上實時集會，
+                        <br>
+                        以視訊會議平台(Google Meet)取代學校集會來教授各項知識。
+                        <br>
+                        每次網上實時集會的Google Meet ID，將在星期四前由隊長提供給成員。<br>
+                    </h6>
+                </div>
             </div>
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/index/img2(1000).jpg" style="width:100%">
+                <div class="numbertext">2 / 2</div>
+                <div class="updates" id="news">
+                    <h3>更新資訊</h3>
+                    <hr>
+                    <h6>
+                        <ul>
+                            <li>2022/03/19 更新：行事曆、通告、童軍團。</li>
+                            <li>2022/03/12 更新：童軍團。</li>
+                            <li>2022/03/04 更新：行事曆、通告。</li>
+                            <li>2022/02/22 更新：嘉許獎勵。</li>
+                            <li>2022/02/15 更新：行事曆、通告。</li>
+                            <li>2022/02/04 更新：通告。</li>
+                            <li>2022/01/29 更新：行事曆、通告、童軍團。</li>
+                            <li>2022/01/17 更新：行事曆、通告。</li>
+                            <li>2022/01/06 更新：照片廊。</li>
+                            <li>2022/01/01 更新：行事曆、領袖簡介、深資童軍團。</li>
+                        </ul>
+                    </h6>     
+                </div>       
             </div>
-            <div class="mySlides fade">
+            <!-- <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="images/index/img3(1000).jpg" style="width:100%">
-            </div>
+            </div> -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -79,14 +109,15 @@
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
         </div>
+        
         <div id="socials">
             <a href="https://www.instagram.com/48scout/" class='socials_links'><img src="images/index/instagram_logo.png" class="socials_logo"><h3>instagram</h3></a>
             <a href="https://www.facebook.com/48hkg" class='socials_links'><img src="images/index/Facebook_Logo.png" class="socials_logo"><h3>facebook</h3></a>
             <a href="https://www.facebook.com/48hkg" class='socials_links'><img src="images/index/googleForms_logo.png" class="socials_logo"><h3>Online Recruitment Form<br>網上入團申請表</h3></a>
         </div>
-        <div id="update_container">
+        <!-- <div id="update_container">
             <div>
                 <div class="updates" id="news">
                     <h3>最新消息</h3>
@@ -100,19 +131,23 @@
                 <div class="updates">
                     <h3>更新資訊</h3>
                     <hr>
-                    <h6>2022/03/19 更新：行事曆、通告、童軍團。<br>
-                    2022/03/12 更新：童軍團。<br>
-                    2022/03/04 更新：行事曆、通告。<br>
-                    2022/02/22 更新：嘉許獎勵。<br>
-                    2022/02/15 更新：行事曆、通告。<br>
-                    2022/02/04 更新：通告。<br>
-                    2022/01/29 更新：行事曆、通告、童軍團。<br>
-                    2022/01/17 更新：行事曆、通告。<br>
-                    2022/01/06 更新：照片廊。<br>
-                    2022/01/01 更新：行事曆、領袖簡介、深資童軍團。</h6>
+                    <h6>
+                        <ul>
+                            <li>2022/03/19 更新：行事曆、通告、童軍團。</li>
+                            <li>2022/03/12 更新：童軍團。</li>
+                            <li>2022/03/04 更新：行事曆、通告。</li>
+                            <li>2022/02/22 更新：嘉許獎勵。</li>
+                            <li>2022/02/15 更新：行事曆、通告。</li>
+                            <li>2022/02/04 更新：通告。</li>
+                            <li>2022/01/29 更新：行事曆、通告、童軍團。</li>
+                            <li>2022/01/17 更新：行事曆、通告。</li>
+                            <li>2022/01/06 更新：照片廊。</li>
+                            <li>2022/01/01 更新：行事曆、領袖簡介、深資童軍團。</li>
+                        </ul>
+                    </h6>
                 </div>
             </div>
-        </div>
+        </div> -->
         <button onclick="topFunction()" id="top"><img src="images/arrow-up.png" id="arrow_up"></button>
     </div>
     <footer>
@@ -123,28 +158,38 @@
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
+
+        // // Auto-changing slideshow
+        // function autoChangeSlides() {
+        //     showSlides(slideIndex += 1);
+        // }
+
+        // setInterval(autoChangeSlides, 10000); // Change slide every 10 seconds
+
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
+
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
+
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+            slides[slideIndex-1].style.display = "block";
+            slides[slideIndex-1].classList.add("fade-in");
+            dots[slideIndex-1].className += " active";
         }
-
     </script>
 </body>
 <style>
@@ -156,17 +201,30 @@
         font-family: Verdana, sans-serif; margin:0
     }
     .mySlides {
-        display: none
+        display: none;
+        animation: fadeEffect 1s;
     }
-    img {
+    /* img {
         vertical-align: middle;
-    }
+    } */
     /* Slideshow container */
     .slideshow-container {
         max-width: 80%;
         position: relative;
         margin-top: 10px;
     }
+
+    .updates{
+        vertical-align: top;
+        background-color: white;
+        width: 100%;
+        font-size: 1rem;
+        padding: 2em;
+        line-height: 1.5em;
+        border-radius: 3rem;
+    }
+
+    
     /* Next & previous buttons */
     .prev, .next {
         cursor: pointer;
@@ -203,9 +261,9 @@
     }
     /* Number text (1/3 etc) */
     .numbertext {
-        color: #f2f2f2;
+        color: bla;
         font-size: 12px;
-        padding: 8px 12px;
+        padding: 16px 20px;
         position: absolute;
         top: 0;
     }
@@ -250,6 +308,7 @@
         }
     }
     #socials{
+        width: 50%;
         text-align: center;
         background-color: white;
         color: black;
@@ -280,7 +339,7 @@
         width:100%;
         background-color:black;
     }
-    .updates{
+    /* .updates{
         vertical-align: top;
         width: 40%;
         margin: 1rem;
@@ -291,7 +350,7 @@
         line-height: 2em;
         border-radius: 3rem;
         text-align: center;
-    }
+    } */
 
     @media (min-width:1000px){
         .arrow:hover{
@@ -345,7 +404,6 @@
             justify-content: center;
             background-color: white;
             color: black;
-            width: 100%;
         }
         #socials a{
             text-decoration: none;

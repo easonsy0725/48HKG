@@ -5,13 +5,32 @@
     padding: 0;
     scroll-behavior: smooth;
   }
-  #main{
+  #main {
+    flex: 1;
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to bottom right ,  green,purple);
+    background-image: linear-gradient(to bottom right, green, purple);
     flex-direction: column;
     align-items: center;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer {
+    background: white;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  
+  footer a {
+    color: blue;
+    text-decoration-line: underline;
+  }
+  
   #logo{
       width: 30%;
       max-width: 60px;
@@ -119,17 +138,6 @@
     background-color: transparent;
     margin: 0 1rem 1rem 1rem;
     max-width: 60px;
-  }
-  footer {
-    background: white;
-    grid-area: footer;
-    flex-grow: 1;
-    font-size: 0.7rem;
-    width: 100%;
-  }
-  footer a{
-    color:blue;
-    text-decoration-line: underline;
   }
   /*Tablet display*/
   @media only screen and (min-width: 768px){
